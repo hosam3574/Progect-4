@@ -1,5 +1,5 @@
 body{
-background-color: rgba(245, 245, 245, 0);
+background-color: rgba(245, 245, 245, 0.093);
 }
 
 
@@ -293,3 +293,60 @@ margin-top: -400px;
   text-shadow: 0 0 10px #fbc02d, 0 0 20px #d32f2f;
 }
 
+
+
+
+/* هون بلشت تحت الخصومات */
+.jack-section {
+  text-align: center;
+  /* ← مسار الصورة */
+  padding: 80px 20px;
+  border-radius: 20px;
+  
+  margin: 60px auto;
+  max-width: 850px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-attachment: fixed; /* يعطي تأثير جميل عند التمرير */
+  margin-left: 650px;
+  margin-top: 240px;
+}
+
+.jack-section h2 {
+    
+  font-size: 32px;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+.jack-section h2 span {
+  color: #28a745; /* أخضر أنيق */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+.jack-section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/*  */
+.شنته{
+    margin-top: -120px;
+    margin-left: 60px;
+}
+
+/**/
+
+.نصائح{
+    margin-left: 65%;
+    margin-top: -390px;
+}
+.نصائح2{
+    margin-left: 130px;
+    margin-top: -330px;
+}
