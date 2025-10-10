@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حقائب الظهر</title>
+    <link rel="stylesheet" href="backpacks.css"> <!-- نفس CSS الأساسي -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<!-- الخلفية الشفافة عند فتح القائمة -->
+<div class="overlay" id="overlay" onclick="toggleProducts()"></div>
+
+<!-- أيقونة المنتجات الجانبية -->
+<div class="product-icon" onclick="toggleProducts()">🛒</div>
+
+<!-- قائمة المنتجات المنزلقه -->
+<div class="product-list" id="productList">
+  <h3 style="font-size: 20px;">منتجاتي</h3>
+  <ul>
+  <a style="font-size: 25px;" href="../page2/tents.html">الخيم</a>
+
+  <li><a style="font-size: 25px;" href="../page3/backpacks.html">حقائب الظهر</a></li>
+  <li><a style="font-size: 25px;" href="../page4/tables.html"> طاولات و كراسي</a></li>
+  <li><a style="font-size: 25px;" href="page2/sleeping-bags.html">جميع مستلزمات البر  </a></li>
+ 
+</ul>
+
+</div>
+
+
+
+
+
+<script>
+function toggleProducts() {
+  const list = document.getElementById('productList');
+  const overlay = document.getElementById('overlay');
+  list.classList.toggle('show');
+  overlay.classList.toggle('show');
+}
+</script>
+
+
+
+
+
+
+
+
+
+<body>
+<a href="../page1/indix.html">⬅ العودة للرئيسية</a>
+
+<!-- Navbar مشترك -->
+<nav class="navbar">
+    <div class="logo">The Hunter</div>
+    <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="#">معلومات عنا</a></li>
+        <li><a href="#">المدونة</a></li>
+        <li><a href="#">المنتجات</a></li>
+    </ul>
+</nav>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- العنوان -->
+
+<div class="product-category">
+
+    <!-- حقيبة صغيرة -->
+    <div class="product-card">
+        <img src="https://media.zid.store/thumbs/06282867-7eaf-4f21-8d02-2438fee6485a/3c62ddc2-dd10-4ba6-b4bb-e364bf2a4228-thumbnail-770x770-70.jpeg" alt="حقيبة صغيرة" style="width:200px;">
+        <h3> </h3>
+        <p style="margin-top: 60px;">مثالية لنزهة قصيرة أو يوم واحد.</p>
+        <div class="price">
+            <span class="old-price">35 دينار</span>
+            <span class="current-price">25 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+        
+    </div>
+
+
+     <div class="product-card">
+        <img src="https://cdn.salla.sa/lywnA/5a17e310-df62-4511-b399-dedd8b64ff1e-1000x838.29787234043-DVAvpX78Hmz5FDNepz2eFEoAstt4aDJiQfppwPRq.png" alt="حقيبة صغيرة" style="width:200px;">
+        <h3> </h3>
+        <p style="margin-top: 100px;" >مثالية لنزهة قصيرة أو يوم واحد.</p>
+        <div class="price">
+            <span class="old-price">35 دينار</span>
+            <span class="current-price">25 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+
+
+
+        
+    </div>
+    
+
+     <div class="product-card">
+        <img src="https://e7.pngegg.com/pngimages/109/349/png-clipart-backpack-hunting-badlands-bum-bags-hunting-luggage-bags-backpack.png" alt="حقيبة صغيرة" style="width:200px;">
+        <h3> </h3>
+        <p>مثالية لنزهة قصيرة أو يوم واحد.</p>
+        <div class="price">
+            <span class="old-price">35 دينار</span>
+            <span class="current-price">25 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+
+
+
+        
+    </div>
+     <div class="product-card">
+        <img src="https://cdn.salla.sa/YgXKWa/e598b097-c857-4053-89eb-c3e208505554-280.78078078078x500-TF5z8jzQwZajAT3NoCKdbxchkSmdUa4CxAVMn93n.png" alt="حقيبة صغيرة" style="width:200px;">
+        <h3> </h3>
+        <p style="margin-top: -90px;">مثالية لنزهة قصيرة أو يوم واحد.</p>
+        <div class="price">
+            <span class="old-price">35 دينار</span>
+            <span class="current-price">25 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+
+
+
+        
+    </div>
+     <div class="product-card">
+        <img src="https://ae01.alicdn.com/kf/Af93599de4f7046b5841718e3dd3f3fa0p.png" alt="حقيبة صغيرة" style="width:200px;">
+        <h3> </h3>
+        <p style="margin-top: 90px;">مثالية لنزهة قصيرة أو يوم واحد.</p>
+        <div class="price">
+            <span class="old-price">35 دينار</span>
+            <span class="current-price">25 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+
+
+
+        
+    </div>
+    
+    
+    <!--**************************************************************-->
+
+
+
+    <!-- حقيبة متوسطة -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnRnnXhuJFe-enwOE4Iwsh78rxfClOkMsP_Oftn-onMo5q_S3g25cLGYk8DVx0hOsFaQ&usqp=CAU" alt="حقيبة متوسطة" style="width:200px;">
+      
+        
+        <div class="price">
+            <span class="old-price">50 دينار</span>
+            <span class="current-price">38 دينار</span>
+            <span class="discount">-24%</span>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.favpng.com/19/16/23/hiking-equipment-backpack-camping-military-surplus-png-favpng-wvkMvG3fJuS0V9jj1RPgb2B5Y.jpg" alt="حقيبة متوسطة" style="width:200px;">
+    
+        <p>مساحة أكبر لتجهيزات يوم كامل.</p>
+        <div class="price">
+            <span class="old-price">50 دينار</span>
+            <span class="current-price">38 دينار</span>
+            <span class="discount">-24%</span>
+        </div>
+    </div>
+
+<div class="product-card">
+        <img src="https://png.pngtree.com/png-vector/20240803/ourmid/pngtree-outdoor-sport-hiking-backpack-png-image_13353866.png" alt="حقيبة متوسطة" style="width:200px;">
+        
+        
+        <div class="price">
+            <span class="old-price">50 دينار</span>
+            <span class="current-price">38 دينار</span>
+            <span class="discount">-24%</span>
+        </div>
+    </div>
+
+
+
+
+
+    <!--**************************************************************-->
+
+
+
+    <!-- حقيبة كبيرة -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vbK1eQfAAlfa0aX3mU17Xnek4BYuWvZ4PyIOgOYsV6dpOfMOrBeuvKC8fBspRzp6XHk&usqp=CAU" alt="حقيبة كبيرة" style="width:200px;">
+       
+        <p>مثالية للرحلات الطويلة والتخييم.</p>
+        <div class="price">
+            <span class="old-price">70 دينار</span>
+            <span class="current-price">55 دينار</span>
+            <span class="discount">-21%</span>
+        </div>
+    </div>
+
+
+
+<!-- *************************************** -->
+
+
+
+
+    <!-- حقيبة كبيرة جدًا -->
+    <div class="product-card">
+        <img src="https://cdn.salla.sa/lywnA/8cadc9bc-ddf6-45c2-aae7-0ddafdfdf7b4-500x500-wl0fX3oAo4OSYaXYCYrvOVtW3ZG78OtmJOd5RXNa.png" alt="حقيبة كبيرة جدًا" style="width:200px;">
+        
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+
+
+
+ <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKSfgJbUm9T8OuGri-73Ra-qbr1B8vAP9KrNfbruxXd9-JGI-Ts4RER7qLcr5BwbPQNc&usqp=CAU" alt="حقيبة كبيرة جدًا" style="width:200px;">
+        
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+
+
+     <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/31XmH2uZg4L._SR290,290_.jpg" alt="حقيبة كبيرة جدًا" style="width:200px;">
+        
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+
+
+
+
+     <div class="product-card">
+        <img src="https://cdn.salla.sa/zpqAr/637AXPyr2pFF7x8FOZqApSjB0TbsIHEWkz7UEOm0.jpg" alt="حقيبة كبيرة جدًا" style="width:200px;">
+        
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+
+
+
+     <div class="product-card">
+        <img src="https://cdn.salla.sa/zpqAr/eFbfgUxgPa95nM9DK6IU0gStNScCsesu4Y09H3Sr.jpg" alt="حقيبة كبيرة جدًا" style="width:200px;">
+      
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+
+     <div class="product-card">
+        <img src="https://cdn.salla.sa/lywnA/GswTze6NBJXsy8XdHcaW3AHIDdRgzgLTw7Zo0V0c.png" alt="حقيبة كبيرة جدًا" style="width:200px;">
+       
+        <p>رحلات التخييم الطويلة أو السفر العائلي.</p>
+        <div class="price">
+            <span class="old-price">90 دينار</span>
+            <span class="current-price">72 دينار</span>
+            <span class="discount">-20%</span>
+        </div>
+    </div>
+    
+    
+
+
+
+</div>
+</body>
+</html>

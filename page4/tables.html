@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طاولات وكراسي</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- الخلفية الشفافة عند فتح القائمة -->
+<div class="overlay" id="overlay" onclick="toggleProducts()"></div>
+
+<!-- أيقونة المنتجات الجانبية -->
+<div class="product-icon" onclick="toggleProducts()">🛒</div>
+
+<!-- قائمة المنتجات المنزلقه -->
+<div class="product-list" id="productList">
+  <h3 style="font-size: 20px;">منتجاتي</h3>
+  <ul>
+  <a style="font-size: 25px;" href="../page2/tents.html">الخيم</a>
+
+  <li><a style="font-size: 25px;" href="../page3/backpacks.html">حقائب الظهر</a></li>
+  <li><a style="font-size: 25px;" href="../page4/tables.html"> طاولات و كراسي</a></li>
+  <li><a style="font-size: 25px;" href="page2/sleeping-bags.html">جميع مستلزمات البر  </a></li>
+ 
+</ul>
+
+</div>
+
+
+
+
+
+<script>
+function toggleProducts() {
+  const list = document.getElementById('productList');
+  const overlay = document.getElementById('overlay');
+  list.classList.toggle('show');
+  overlay.classList.toggle('show');
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<a href="../page1/indix.html">⬅ العودة للرئيسية</a>
+
+<!-- Navbar مشترك -->
+<nav class="navbar">
+    <div class="logo">The Hunter</div>
+    <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="#">معلومات عنا</a></li>
+        <li><a href="#">المدونة</a></li>
+        <li><a href="#">المنتجات</a></li>
+    </ul>
+</nav>
+
+<!-- العنوان -->
+<section class="tables-header">
+    <h1>منتجات الطاولات والكراسي</h1>
+    <p>اختَر الطاولة أو الكرسي الأنسب لرحلتك.</p>
+</section>
+
+<!-- قائمة المنتجات -->
+<div class="product-category">
+
+    <!-- بطاقة منتج 1 -->
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61j5qB9VvOL._AC_SL1500_.jpg" alt="طاولة قابلة للطي">
+        <h3>طاولة قابلة للطي</h3>
+        <p>خفيفة ومناسبة للتخييم.</p>
+        <div class="price">
+            <span class="old-price">60 دينار</span>
+            <span class="current-price">45 دينار</span>
+            <span class="discount">-25%</span>
+        </div>
+    </div>
+
+    <!-- بطاقة منتج 2 -->
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71H1+7bLCXL._AC_SL1500_.jpg" alt="كرسي محمول">
+        <h3>كرسي محمول</h3>
+        <p>خفيف وسهل الحمل.</p>
+        <div class="price">
+            <span class="old-price">40 دينار</span>
+            <span class="current-price">30 دينار</span>
+            <span class="discount">-25%</span>
+        </div>
+    </div>
+
+    <!-- بطاقة منتج 3 -->
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71YcewGZ+LL._AC_SL1500_.jpg" alt="طاولة وكراسي قابلة للطي">
+        <h3>طاولة وكراسي قابلة للطي</h3>
+        <p>مجموعة كاملة لمغامرتك.</p>
+        <div class="price">
+            <span class="old-price">120 دينار</span>
+            <span class="current-price">90 دينار</span>
+            <span class="discount">-25%</span>
+        </div>
+    </div>
+
+    <!-- يمكن إضافة المزيد بنفس الشكل -->
+</div>
+
+</body>
+</html>
