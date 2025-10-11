@@ -19,11 +19,13 @@
 <div class="product-list" id="productList">
   <h3 style="font-size: 20px;">منتجاتي</h3>
   <ul>
-  <a style="font-size: 25px;" href="../page2/tents.html">الخيم</a>
-
-  <li><a style="font-size: 25px;" href="../page3/backpacks.html">حقائب الظهر</a></li>
-  <li><a style="font-size: 25px;" href="../page4/tables.html"> طاولات و كراسي</a></li>
-  <li><a style="font-size: 25px;" href="page2/sleeping-bags.html">جميع مستلزمات البر  </a></li>
+ <li> <a style="font-size: 30px; text-decoration: none; color: #28a745 ;" href="../page2/tents.html">الخيم</a></li>
+<hr>
+  <li><a style="font-size: 30px; text-decoration: none; color: #28a745 ;" href="../page3/backpacks.html">حقائب الظهر</a></li>
+<hr>
+  <li><a style="font-size: 30px; text-decoration: none; color: #28a745 ;" href="../page4/tables.html"> طاولات و كراسي</a></li>
+<hr>
+  <li><a style="font-size: 30px; text-decoration: none; color: #28a745 ;" href="../page5/clothes.html">جميع مستلزمات البر  </a></li>
  
 </ul>
 
@@ -52,16 +54,39 @@ function toggleProducts() {
 
 
 <body>
-    
+   
+  <div id="contactPopup" style="display:none; position:fixed; top:50%; left:80%; transform:translate(-50%,-50%);
+background-color:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); z-index:10000;margin-top: -200px;">
+  <h3>تواصل معنا</h3>
+  <p>📞 الهاتف: 0770245471</p>
+  <p>📧 البريد الإلكتروني: hossamtradat@gmail.com</p>
+  <button onclick="closeContact()">إغلاق</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
  <nav class="navbar">
+
+  
     <div class="logo">The Hunter</div>
     <ul class="nav-links">
       <li><a href="#">دخول / تسجيل</a></li>
-      <li><a href="#">اتصل بنا</a></li>
+      <li><a href="#" onclick="showContact(event)">اتصل بنا</a></li>
+
       <li><a href="#">معلومات عنا</a></li>
       <li><a href="#">المدونة</a></li>
       <li><a href="#">المنتجات</a></li>
-      <li><a href="#">فئات</a></li>
+      <li><a href="#">فئات</a> </li>
+      
+
     </ul>
     <div class="hamburger">
       <span></span>
@@ -70,6 +95,10 @@ function toggleProducts() {
     </div>
   </nav>
 </div>
+
+
+
+
 
 <div>
 <div>
@@ -185,26 +214,26 @@ function toggleProducts() {
 
 <div class="نصائح">
 <div>
-   <img src="../img/Frame 26088155.png" alt=""> <p style="margin-top: -130px; margin-left: 20px; font-size: 24px;">قائمة التحقق للأدوات المهمة <br> والضرورية للتخييم والسفر</p>
+   <img src="../img/Frame 26088155.png" alt=""> <p style="margin-top: -130px; margin-left: 20px; font-size: 18px;">قائمة التحقق للأدوات المهمة <br> والضرورية للتخييم والسفر</p>
    
 </div>
 <br><br><br><br>
 <div>
-<img src="../img/Frame 26088162.png" alt=""><p style="margin-top: -120px; font-size: 24px; margin-left: 60px;">أفضل طرق إعداد <br>القهوة أثناء التخييم</p>
+<img src="../img/Frame 26088162.png" alt=""><p style="margin-top: -120px; font-size: 22px; margin-left: 60px;">أفضل طرق إعداد <br>القهوة أثناء التخييم</p>
 </div>
 
 </div>
 
 <div class="نصائح2">
     <div>
-    <img src="../img/Frame 26088154.png" alt=""> <p style="margin-top: -60px; font-size: 23px;margin-left: 80px;" >نصائح مهمة للتخييم في فصل الشتاء</p></div>
+    <img src="../img/Frame 26088154.png" alt=""> <p style="margin-top: -60px; font-size: 20px;margin-left: 70px;" >نصائح مهمة للتخييم في فصل الشتاء</p></div>
 <br>
-    <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 23px;margin-left: 80px;">التعريف بأفضل المخيمات البيئية في إيران</p></div> 
+    <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 18px;margin-left: 65px;">التعريف بأفضل المخيمات البيئية في الاردن </p></div> 
 <br>
-     <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 23px;margin-left: 80px;">دليل شراء أفضل خيمة للتخييم</p></div> 
+     <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 20px;margin-left: 80px;">دليل شراء أفضل خيمة للتخييم</p></div> 
 <br>
 
- <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 23px;margin-left: 80px;">   الفروقات بين المصابيح  القابلة للشحن     </p></div> 
+ <div><img src="../img/Frame 26088154.png" alt=""> <p  style="margin-top: -60px; font-size: 20px;margin-left: 80px;">   الفروقات بين المصابيح  القابلة للشحن     </p></div> 
 
 
 </div>
@@ -238,6 +267,7 @@ function toggleProducts() {
 
 
 <!--  finsh    -->
+  
 
 <img style="width: 100%; background-color: rgba(255, 255, 255, 0);" src="../img/Subtract (3).png" alt="">
 <div>
@@ -295,7 +325,7 @@ function toggleProducts() {
 
 </div>
 
-
+<h1 style="font-size: 20px;color: rgba(0, 0, 0, 0.692); margin-left: 160px;margin-top: 40px;">    الهاتف : +962 770245471</h1>
 
 
 </div>
@@ -304,6 +334,19 @@ function toggleProducts() {
 
 
 
+<script>
+function showContact(event) {
+  event.preventDefault();
+  document.getElementById('contactPopup').style.display = 'block';
+}
+
+function closeContact() {
+  document.getElementById('contactPopup').style.display = 'none';
+}
+
+
+
+</script>
 
 </body>
 </html>

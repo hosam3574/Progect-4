@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خيم التخييم</title>
+    <link rel="stylesheet" href="clothes.css"> <!-- نفس CSS الأساسي -->
+</head>
+
+
+
+
+
+<!-- الخلفية الشفافة عند فتح القائمة -->
+<div class="overlay" id="overlay" onclick="toggleProducts()"></div>
+
+<!-- أيقونة المنتجات الجانبية -->
+<div class="product-icon" onclick="toggleProducts()">🛒</div>
+
+<!-- قائمة المنتجات المنزلقه -->
+<div class="product-list" id="productList">
+  <h3 style="font-size: 20px;">منتجاتي</h3>
+  <ul>
+  <a style="font-size: 25px;" href="../page2/tents.html">الخيم</a>
+
+  <li><a style="font-size: 25px;" href="../page3/backpacks.html">حقائب الظهر</a></li>
+  <li><a style="font-size: 25px;" href="../page4/tables.html"> طاولات و كراسي</a></li>
+  <li><a style="font-size: 25px;" href="../page5/clothes.html">جميع مستلزمات البر  </a></li>
+ 
+</ul>
+
+</div>
+
+
+
+
+
+<script>
+function toggleProducts() {
+  const list = document.getElementById('productList');
+  const overlay = document.getElementById('overlay');
+  list.classList.toggle('show');
+  overlay.classList.toggle('show');
+}
+</script>
+
+
+
+<body>
+
+
+
+
+<a href="../page1/indix.html">⬅ العودة للرئيسية</a>
+
+
+<!-- Navbar مشترك -->
+<nav class="navbar">
+    <div class="logo">The Hunter</div>
+  
+</nav>
+
+
+
+
+
+<div class="product-category">
+
+    <!-- بريق شاي -->
+    <div class="product-card">
+        <img src="https://png.pngtree.com/png-vector/20250518/ourmid/pngtree-stainless-steel-tea-kettle-with-black-handle-isolated-on-white-background-png-image_16308363.png" alt="بريق شاي" style="width:200px;">
+        <h3>بريق شاي ستانلس</h3>
+        <p>مثالي للبر والرحلات</p>
+        <div class="price">
+            <span class="old-price">18 دينار</span>
+            <span class="current-price">12 دينار</span>
+            <span class="discount">-33%</span>
+        </div>
+    </div>
+
+    <!-- قطّاعة متعددة الاستخدام -->
+    <div class="product-card">
+        <img style="width: 200px;background-color: antiquewhite;"  src="https://png.pngtree.com/png-clipart/20190116/ourlarge/pngtree-yellow-ax-ax-cut-axe-png-image_376930.jpg" alt="قطّاعة" style="width:200px;">
+        <h3>قطّاعة متعددة الاستخدام</h3>
+        <p>تسهل تقطيع الخضار واللحوم في البر</p>
+        <div class="price">
+            <span class="old-price">20 دينار</span>
+            <span class="current-price">14 دينار</span>
+            <span class="discount">-30%</span>
+        </div>
+    </div>
+
+    <!-- حبل نايلون متين -->
+    <div class="product-card">
+        <img src="https://s.alicdn.com/@sc04/kf/Ha41238bf2df348ba92d2b07b8a58e99aS/Nylon-Polyester-Pe-CE-Certificate-Marine-Yacht-Boat-Dock-Line-White-Navy-Blue-Black-Double-Braided-Rope.png_300x300.jpg" alt="حبل نايلون" style="width:200px;">
+        <h3>حبل نايلون متين</h3>
+        <p>مناسب لتثبيت الخيم أو تعليق الأغراض</p>
+        <div class="price">
+            <span class="old-price">10 دينار</span>
+            <span class="current-price">7 دينار</span>
+            <span class="discount">-30%</span>
+        </div>
+    </div>
+
+    <!-- طقم كاسات استنلس -->
+    <div class="product-card">
+        <img style="width: 190px;background-color: antiquewhite;height: 190px;" src="https://m.media-amazon.com/images/I/71fxpYHgEEL.jpg" alt="كاسات استنلس" style="width:200px;">
+        <h3>طقم كاسات استنلس</h3>
+        <p>خيار عملي وخفيف للتنقل</p>
+        <div class="price">
+            <span class="old-price">15 دينار</span>
+            <span class="current-price">10 دينار</span>
+            <span class="discount">-33%</span>
+        </div>
+    </div>
+
+    <!-- مصباح LED -->
+    <div class="product-card">
+        <img style="width: 200px;background-color: antiquewhite;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo53LHkOj2TTdW8JaVntdwkG0B2jCHeyWbYg&s" alt="مصباح LED" style="width:200px;">
+        <h3>مصباح LED قابل للشحن</h3>
+        <p>إضاءة قوية للبر والرحلات الليلية</p>
+        <div class="price">
+            <span class="old-price">25 دينار</span>
+            <span class="current-price">17 دينار</span>
+            <span class="discount">-32%</span>
+        </div>
+    </div>
+
+
+ <div class="product-card">
+        <img src="https://cdn.salla.sa/pQXGDP/9d2c02e6-4a26-4501-acfe-3251c64e2c3f-1000x1000-TFiRXt6hSmJzkNRbsV5DO5sZ7RqFWJcpKxiv8lmQ.jpg" alt="مصفاة وأدوات تنظيف" style="width:200px;">
+        <h3>مصفاة وأدوات تنظيف</h3>
+        <p>مناسبة لغسل الأواني بعد الطهي في البر</p>
+        <div class="price">
+            <span class="old-price">15 دينار</span>
+            <span class="current-price">10 دينار</span>
+            <span class="discount">-33%</span>
+        </div>
+    </div>
+
+
+
+     <!-- مبرد مياه صغير -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVm8ec8_g3q6RlXgczLc-H1UppHWiqTYe93A&s" alt="مبرد مياه" style="width:200px;">
+        <h3>مبرد مياه صغير</h3>
+        <p>يحافظ على برودة المشروبات أثناء الرحلات</p>
+        <div class="price">
+            <span class="old-price">30 دينار</span>
+            <span class="current-price">22 دينار</span>
+            <span class="discount">-27%</span>
+        </div>
+    </div>
+
+
+
+      <div class="product-card">
+        <img src="https://s.alicdn.com/@sc04/kf/Ha327c643d88b4ea1af5c9f9293e3411dk/High-Quality-Portable-Gas-Stove-Hot-Pot-Refillable-Mini-Gas-Burner.png" alt="مشعل غاز صغير" style="width:200px;">
+        <h3>مشعل غاز صغير</h3>
+        <p>مثالي للطهي السريع في البر</p>
+        <div class="price">
+            <span class="old-price">25 دينار</span>
+            <span class="current-price">18 دينار</span>
+            <span class="discount">-28%</span>
+        </div>
+    </div>
+
+    
+
+ <div class="product-card">
+        <img src="https://media.zid.store/f2f85fc7-1f7d-4eef-bfa0-fdcd1eb3b595/1887d11a-140f-40db-8f2b-25b8e3451050.jpg" alt="أداة فتح علب" style="width:200px;">
+        <h3>أداة فتح علب متعددة</h3>
+        <p>سهلة الاستخدام لجميع أنواع العلب</p>
+        <div class="price">
+            <span class="old-price">6 دينار</span>
+            <span class="current-price">4 دينار</span>
+            <span class="discount">-33%</span>
+        </div>
+    </div>
+
+
+  <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51bAhatY7SL._UF1000,1000_QL80_.jpg" alt="مطرقة خفيفة" style="width:200px;">
+        <h3>مطرقة خفيفة للتخييم</h3>
+        <p>لتثبيت الخيم والعواميد بسهولة</p>
+        <div class="price">
+            <span class="old-price">10 دينار</span>
+            <span class="current-price">7 دينار</span>
+            <span class="discount">-30%</span>
+        </div>
+    </div>
+ 
+
+
+<div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzlziNohKzyxqFIk5-ZQrsmtwkDo3NZQtY9w&s" alt="طقم أواني طهي" style="width:200px;">
+        <h3>طقم أواني طهي صغيرة</h3>
+        <p>مثالي للرحلات والتخييم، خفيف وسهل التنظيف</p>
+        <div class="price">
+            <span class="old-price">22 دينار</span>
+            <span class="current-price">16 دينار</span>
+            <span class="discount">-27%</span>
+        </div>
+    </div>
+
+
+  <div class="product-card">
+        <img src="https://cdn.salla.sa/54OXHiwO541LWvP3930JSPGc1jAqpApZroT84Psf.png" alt="مصباح رأس LED" style="width:200px;">
+        <h3>مصباح رأس LED</h3>
+        <p>إضاءة قوية لليالي التخييم بدون استخدام اليدين</p>
+        <div class="price">
+            <span class="old-price">20 دينار</span>
+            <span class="current-price">14 دينار</span>
+            <span class="discount">-30%</span>
+        </div>
+    </div>
+
+  <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStK816OiyVcDTBrSlImWsCRBePrR5lv0cl6A&s" alt="طقم أدوات تنظيف" style="width:200px;">
+        <h3>طقم أدوات تنظيف خفيف</h3>
+        <p>للحفاظ على نظافة الأواني بعد الطهي في البر</p>
+        <div class="price">
+            <span class="old-price">12 دينار</span>
+            <span class="current-price">8 دينار</span>
+            <span class="discount">-33%</span>
+        </div>
+    </div>
+
+  <div class="product-card">
+        <img style="width: 220px;background-color: antiquewhite;"  src="https://cdn.salla.sa/BErKw/TX7v1IOYnVnJcUApQcwmwJ7J0uFPoZW4GXed3wiy.png" alt="منقلة فحم قابلة للطي" style="width:200px;">
+        <br><br><br>
+        <h3>منقلة فحم قابلة للطي</h3>
+        <p>خفيفة وسهلة الحمل للشوي في البر</p>
+        <div class="price">
+            <span class="old-price">28 دينار</span>
+            <span class="current-price">20 دينار</span>
+            <span class="discount">-29%</span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

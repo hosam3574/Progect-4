@@ -1,14 +1,5 @@
 
-body{
-background-color: rgba(245, 245, 245, 0.093);
 
-    background-image: url(https://cdn.arabsstock.com/uploads/images/139080/traditional-arab-gatherings-in-the-thumbnail-139080.webp);
-    background-size: cover;       /* تجعل الصورة تغطي كل الصفحة */
-    background-repeat: no-repeat; /* تمنع تكرار الصورة */
-    background-position: center;  /* تجعل الصورة في الوسط */
-    background-attachment: fixed; /* تجعل الصورة ثابتة أثناء التمرير */
-
-}
 
 
 .navbar {
@@ -86,9 +77,15 @@ background-color: rgba(245, 245, 245, 0.093);
 }
 
 
+/********************************************************/
 
 
-/*******************************************************/
+
+
+
+
+
+
 /* إعدادات أساسية */
 body {
     font-family: 'Arial', sans-serif;
@@ -210,6 +207,47 @@ a {
         width: 80%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
