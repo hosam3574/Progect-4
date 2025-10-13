@@ -507,3 +507,64 @@ margin-top: -400px;
 /*                تعديلات ال navbar         */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* السلة */
+.cart {
+  position: fixed;
+  top: 100px;
+  right: -300px;
+  width: 250px;
+  background-color: white;
+  border: 2px solid #28a745;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  z-index: 1001;
+  transition: right 0.4s ease-in-out;
+}
+.cart.show {
+  right: 20px;
+}
+
+.cart-overlay {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1000;
+}
+.cart-overlay.show {
+  display:block;
+}
+
+.cart h3 {
+  margin-top:0;
+  text-align:center;
+  color:#28a745;
+}
+
+.cart ul {
+  list-style:none;
+  padding:0;
+  margin:0 0 10px 0;
+}
+
+.cart ul li {
+  padding:5px 0;
+  border-bottom:1px solid #eee;
+}

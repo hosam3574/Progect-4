@@ -6,70 +6,30 @@
     <title>خيم التخييم</title>
     <link rel="stylesheet" href="tents.css"> <!-- نفس CSS الأساسي -->
 </head>
+<body>
 
-
-
-
+<!-- أيقونة المنتجات الجانبية (ثابتة) -->
+<div class="product-icon" id="productIcon">🛒</div>
 
 <!-- الخلفية الشفافة عند فتح القائمة -->
 <div class="overlay" id="overlay" onclick="toggleProducts()"></div>
 
-<!-- أيقونة المنتجات الجانبية -->
-<div class="product-icon" onclick="toggleProducts()">🛒</div>
-
-<!-- قائمة المنتجات المنزلقه -->
+<!-- قائمة المنتجات الجانبية -->
 <div class="product-list" id="productList">
   <h3 style="font-size: 20px;">منتجاتي</h3>
   <ul>
-  <a style="font-size: 25px;" href="../page2/tents.html">الخيم</a>
-
-  <li><a style="font-size: 25px;" href="../page3/backpacks.html">حقائب الظهر</a></li>
-  <li><a style="font-size: 25px;" href="../page4/tables.html"> طاولات و كراسي</a></li>
-  <li><a style="font-size: 25px;" href="../page5/clothes.html">جميع مستلزمات البر  </a></li>
- 
-</ul>
-
+    <li><a href="../page2/tents.html">الخيم</a></li>
+    <li><a href="../page3/backpacks.html">حقائب الظهر</a></li>
+    <li><a href="../page4/tables.html">طاولات وكراسي</a></li>
+    <li><a href="../page5/clothes.html">جميع مستلزمات البر</a></li>
+  </ul>
 </div>
 
-
-
-
-
-<script>
-function toggleProducts() {
-  const list = document.getElementById('productList');
-  const overlay = document.getElementById('overlay');
-  list.classList.toggle('show');
-  overlay.classList.toggle('show');
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body>
 <a href="../page1/indix.html">⬅ العودة للرئيسية</a>
-
 
 <!-- Navbar مشترك -->
 <nav class="navbar">
     <div class="logo">The Hunter</div>
-  
 </nav>
 
 <!-- العنوان -->
@@ -78,10 +38,9 @@ function toggleProducts() {
   <p>اختَر الخيمة الأنسب لرحلتك: صغيرة، كبيرة أو عائلية.</p>
 </section>
 
-
 <div class="product-category">
 
-    <!-- خيمة صغيرة -->
+    <!-- **************** خيم صغيرة **************** -->
     <div class="product-card">
         <img src="https://files.easy-orders.net/1721127668810449602.jpg" alt="خيمة صغيرة" style="width:200px;">
         <h3>خيمة صغيرة</h3>
@@ -91,11 +50,11 @@ function toggleProducts() {
             <span class="current-price">30 دينار</span>
             <span class="discount">-33%</span>
         </div>
+        <button onclick="addToCart('خيمة صغيرة', 30)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlgg2NmamoF6ROliGp6q5h1UevZ4D7yZkDxIuVZSa9lftYeX8PzWlsQCShtNqKvgOX6xg&usqp=CAU" alt="خيمة صغيرة" style="width:200px;">
-        <br><br><br><br>
         <h3>خيمة صغيرة</h3>
         <p>مثالية لشخص واحد أو اثنين</p>
         <div class="price">
@@ -103,6 +62,7 @@ function toggleProducts() {
             <span class="current-price">35 دينار</span>
             <span class="discount">-30%</span>
         </div>
+        <button onclick="addToCart('خيمة صغيرة', 35)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -114,11 +74,11 @@ function toggleProducts() {
             <span class="current-price">32 دينار</span>
             <span class="discount">-33%</span>
         </div>
+        <button onclick="addToCart('خيمة صغيرة', 32)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
         <img src="https://m.media-amazon.com/images/I/81sMIO6mxiL._AC_SL1500_.jpg" alt="خيمة صغيرة" style="width:200px;">
-        <br><br><br><br><br>
         <h3>خيمة صغيرة</h3>
         <p>مثالية لشخص واحد أو اثنين</p>
         <div class="price">
@@ -126,6 +86,7 @@ function toggleProducts() {
             <span class="current-price">30 دينار</span>
             <span class="discount">-36%</span>
         </div>
+        <button onclick="addToCart('خيمة صغيرة', 30)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -137,17 +98,10 @@ function toggleProducts() {
             <span class="current-price">30 دينار</span>
             <span class="discount">-35%</span>
         </div>
+        <button onclick="addToCart('خيمة صغيرة', 30)">أضف للسلة</button>
     </div>
 
-
-
-
-
-<!--*****************************************************************************************************-->
-
-
-
-    <!-- خيمة كبيرة -->
+    <!-- **************** خيم كبيرة **************** -->
     <div class="product-card">
         <img src="https://image.made-in-china.com/43f34j00oSZkaIdPAQzO/Wholesale-Outdoor-Inflation-Air-Tube-Tent-Travel-Folding-Inflatable-Camping-Tent.webp" alt="خيمة كبيرة" style="width:200px;">
         <h3>خيمة كبيرة</h3>
@@ -157,6 +111,7 @@ function toggleProducts() {
             <span class="current-price">70 دينار</span>
             <span class="discount">-22%</span>
         </div>
+        <button onclick="addToCart('خيمة كبيرة', 70)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -168,6 +123,7 @@ function toggleProducts() {
             <span class="current-price">72 دينار</span>
             <span class="discount">-24%</span>
         </div>
+        <button onclick="addToCart('خيمة كبيرة', 72)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -179,6 +135,7 @@ function toggleProducts() {
             <span class="current-price">70 دينار</span>
             <span class="discount">-24%</span>
         </div>
+        <button onclick="addToCart('خيمة كبيرة', 70)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -190,6 +147,7 @@ function toggleProducts() {
             <span class="current-price">68 دينار</span>
             <span class="discount">-23%</span>
         </div>
+        <button onclick="addToCart('خيمة كبيرة', 68)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -201,13 +159,12 @@ function toggleProducts() {
             <span class="current-price">65 دينار</span>
             <span class="discount">-23%</span>
         </div>
+        <button onclick="addToCart('خيمة كبيرة', 65)">أضف للسلة</button>
     </div>
 
-    <!-- خيمة عائلية -->
+    <!-- **************** خيم عائلية **************** -->
     <div class="product-card">
         <img src="https://yallabook.com/blog/uploade/files/210627_07501614e2.jpg" alt="خيمة عائلية" style="width:200px;">
-<br><br><br><br><br>
-
         <h3>خيمة عائلية</h3>
         <p>راحة ومساحة لكل أفراد العائلة</p>
         <div class="price">
@@ -215,6 +172,7 @@ function toggleProducts() {
             <span class="current-price">120 دينار</span>
             <span class="discount">-20%</span>
         </div>
+        <button onclick="addToCart('خيمة عائلية', 120)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -226,6 +184,7 @@ function toggleProducts() {
             <span class="current-price">125 دينار</span>
             <span class="discount">-19%</span>
         </div>
+        <button onclick="addToCart('خيمة عائلية', 125)">أضف للسلة</button>
     </div>
 
     <div class="product-card">
@@ -237,22 +196,63 @@ function toggleProducts() {
             <span class="current-price">130 دينار</span>
             <span class="discount">-19%</span>
         </div>
+        <button onclick="addToCart('خيمة عائلية', 130)">أضف للسلة</button>
     </div>
 
-<div class="product-card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD7Udnd05nvBxi2SSTrnv9-CFrhBCBHc9G2-PRvQW8YnL27wvy_YwCJC6hWf_v_Fi1uw&usqp=CAU" alt="خيمة عائلية" style="width:200px;">
-        
-        <h3>خيمة عائلية</h3>
-        <p>راحة ومساحة لكل أفراد العائلة</p>
-        <div class="price">
-            <span class="old-price">160 دينار</span>
-            <span class="current-price">130 دينار</span>
-            <span class="discount">-19%</span>
-        </div>
-    </div>
+</div>
 
+<!-- السلة -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart" id="cart">
+  <h3>سلة المشتريات</h3>
+  <ul id="cartItems"></ul>
+  <button onclick="clearCart()">تفريغ السلة</button>
+</div>
 
+<script>
+  // ---------------------- السلة ----------------------
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+  function addToCart(name, price) {
+    cart.push({name, price});
+    localStorage.setItem('cart', JSON.stringify(cart));
+    renderCart();
+  }
+
+  function renderCart() {
+    const cartItems = document.getElementById('cartItems');
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.name} - ${item.price} دينار`;
+      cartItems.appendChild(li);
+    });
+  }
+
+  function toggleCart() {
+    document.getElementById('cart').classList.toggle('show');
+    document.getElementById('cartOverlay').classList.toggle('show');
+  }
+
+  function clearCart() {
+    cart = [];
+    localStorage.setItem('cart', JSON.stringify(cart));
+    renderCart();
+  }
+
+  renderCart(); // عرض السلة عند فتح الصفحة
+
+  // ---------------------- قائمة المنتجات ----------------------
+  function toggleProducts() {
+    const list = document.getElementById('productList');
+    const overlay = document.getElementById('overlay');
+    list.classList.toggle('show');
+    overlay.classList.toggle('show');
+  }
+
+  const productIcon = document.getElementById('productIcon');
+  productIcon.addEventListener('click', toggleProducts);
+</script>
 
 </body>
 </html>

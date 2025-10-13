@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h1>إضافة منتج</h1>
+  <form id="productForm">
+    <input type="text" name="name" placeholder="اسم المنتج" required /><br/>
+    <input type="text" name="description" placeholder="وصف المنتج" /><br/>
+    <input type="number" name="price" placeholder="السعر" required /><br/>
+    <input type="text" name="image" placeholder="رابط الصورة" /><br/>
+    <select name="category" required>
+      <option value="tents">خيم</option>
+      <option value="backpacks">حقائب الظهر</option>
+      <option value="tables">طاولات و كراسي</option>
+      <option value="clothes">مستلزمات البر</option>
+    </select><br/>
+    <button type="submit">أضف المنتج</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('productForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const product = Object.fromEntries(formData.entries());
+
+      // جلب المنتجات الحالية من localStorage أو إنشاء مصفوفة جديدة
+      let products = JSON.parse(localStorage.getItem('products')) || [];
+
+      // إضافة المنتج الجديد
+      products.push(product);
+
+      // تخزين المنتجات مرة أخرى
+      localStorage.setItem('products', JSON.stringify(products));
+
+      alert('تم إضافة المنتج بنجاح!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
