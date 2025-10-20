@@ -38,7 +38,10 @@
   <p>اختَر الخيمة الأنسب لرحلتك: صغيرة، كبيرة أو عائلية.</p>
 </section>
 
-<div class="product-category">
+<div class="product-category" id="productContainer">
+    <!-- كل المنتجات القديمة المكتوبة يدويًا تبقى كما هي -->
+
+
 
     <!-- **************** خيم صغيرة **************** -->
     <div class="product-card">
@@ -198,8 +201,8 @@
         </div>
         <button onclick="addToCart('خيمة عائلية', 130)">أضف للسلة</button>
     </div>
-
 </div>
+
 
 <!-- السلة -->
 <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
@@ -252,6 +255,41 @@
 
   const productIcon = document.getElementById('productIcon');
   productIcon.addEventListener('click', toggleProducts);
+
+  // ---------------------- جلب المنتجات الجديدة ----------------------
+  function addProductCard(container, p) {
+    const card = document.createElement('div');
+    card.classList.add('product-card');
+    card.innerHTML = `
+      <img src="${p.image || 'https://via.placeholder.com/200'}" alt="${p.name}" style="width:200px;">
+      <h3>${p.name}</h3>
+      <p>${p.description || ''}</p>
+      <div class="price">
+        <span class="current-price">${p.price} دينار</span>
+      </div>
+      <button onclick="addToCart('${p.name}', ${p.price})">أضف للسلة</button>
+    `;
+    container.appendChild(card);
+  }
+
+  async function loadTents() {
+    try {
+      const res = await fetch('http://localhost:6000/api/products/category/tents');
+      const products = await res.json();
+      const container = document.getElementById('productContainer');
+
+      // لمنع تكرار المنتجات الجديدة بعد كل تحميل
+      const existing = Array.from(container.getElementsByClassName('product-card')).map(card => card.querySelector('h3').textContent);
+      products.forEach(p => {
+        if (!existing.includes(p.name)) addProductCard(container, p);
+      });
+    } catch (err) {
+      console.error('فشل تحميل المنتجات:', err);
+    }
+  }
+
+  loadTents(); // تحميل أول مرة
+  setInterval(loadTents, 5000); // تحديث كل 5 ثواني
 </script>
 
 </body>
